@@ -1,0 +1,48 @@
+
+  @font-face {
+    font-family: PoppinsRegular;
+    src: url(./Poppins/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: PoppinsSemiBold;
+    src: url(./Poppins/Poppins-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: PoppinsLight;
+    src: url(./Poppins/Poppins-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: PoppinsMedium;
+    src: url(./Poppins/Poppins-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: PoppinsSemiBoldItalic;
+    src: url(./Poppins/Poppins-SemiBoldItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: PoppinsBold;
+    src: url(./Poppins/Poppins-Bold.ttf);
+  }
+
+  .forumPost{
+    background-color: #E5ECF4 ;
+    border-radius: 20px 20px 0px 0px;
+    border: none;
+    padding:30px;
+    border-bottom: 5px solid #BBCFE5;
+  }
+  
+
+.replySection{
+    background-color: #E5ECF4 ;
+    border-radius: 0px 0px 20px 20px ;
+    border: none;
+    padding:22px;
+    margin-bottom: 48px !important;
+  }
+  
