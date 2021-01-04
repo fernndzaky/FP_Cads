@@ -76,7 +76,7 @@ class HomePage extends React.Component {
 
 
 
-              <h3 style={{color:"#145CA8",fontFamily:"PoppinsSemiBold"}} className="pt-5">Binusian Forum Post</h3>
+              <h3 style={{color:"#145CA8",fontFamily:"PoppinsSemiBold"}} className="pt-5">Binusian Forums Post</h3>
               <div style={{marginTop:"30px"}}>
                   <form onSubmit={this.createPost}>
                     <div className="row m-0">
