@@ -8,7 +8,7 @@ class Post extends React.Component {
     componentDidMount(){
     } 
 
-    deletePost = (e) => {
+    deletePost = async (e) => {
         e.preventDefault();
         const data = {
         id : this.props.post._id
