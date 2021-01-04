@@ -5,21 +5,21 @@ import axios from 'axios';
 
 class Post extends React.Component {
 
-  componentDidMount(){
-  }
-  
+    componentDidMount(){
+    } 
 
-
-  deletePost = async (e) => {
-    e.preventDefault();
-    const data = {
-      id : this.props.post._id
-    }
-    await axios.delete('https://i7e363vzhk.execute-api.ap-southeast-1.amazonaws.com/cads/', {
-      headers: data
-     })
-
-     window. location. reload(true)
+    deletePost = (e) => {
+        e.preventDefault();
+        const data = {
+        id : this.props.post._id
+        }
+        await axios.delete('https://i7e363vzhk.execute-api.ap-southeast-1.amazonaws.com/cads/', {
+        headers: data
+        },
+        error=>{
+            
+        })    
+            window. location. reload(true)
 
 }
 
@@ -59,10 +59,7 @@ class Post extends React.Component {
                                             <i className="far fa-trash-alt" style={{color:"red",fontSize:"16px",marginLeft:"2px"}}></i>
                                         </td>
                                         <td>
-                                            <form onSubmit={this.deletePost}>
-                                                <input type="text" name="id" value={this.props.post._id} hidden/>
-                                                <button className="btn p-0" style={{color:"red",marginLeft:"10px !important",fontFamily:"PoppinsSemiBold"}} onclick="return confirm('Are you sure you want to archive this post?')" type="submit">Delete</button>
-                                            </form>                    
+                                            <button onClick={this.deletePost} className="btn p-0" style={{color:"red",marginLeft:"10px !important",fontFamily:"PoppinsSemiBold"}}>DELETE</button>
                                         </td>
                                     </tr>
                                 </table>
