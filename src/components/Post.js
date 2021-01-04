@@ -10,7 +10,8 @@ class Post extends React.Component {
 
     deletePost = async (e) => {
         const data = {
-            id : this.props.post._id
+            id : this.props.post._id,
+            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
         }
         await axios.delete('https://i7e363vzhk.execute-api.ap-southeast-1.amazonaws.com/cads/', {
           headers: data
