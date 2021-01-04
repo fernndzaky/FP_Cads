@@ -8,17 +8,14 @@ class Post extends React.Component {
     componentDidMount(){
     } 
 
-    deletePost = (e) => {
+    deletePost = async (e) => {
         const data = {
             id : this.props.post._id
         }
-        axios.delete('https://i7e363vzhk.execute-api.ap-southeast-1.amazonaws.com/cads/', {
-          headers: data
-         })
-    
-         //window. location. reload(true)
-    
+        await axios.delete('https://i7e363vzhk.execute-api.ap-southeast-1.amazonaws.com/cads/',data) 
+        //window. location. reload(true)
     }
+
 
   
 
