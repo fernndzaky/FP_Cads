@@ -14,15 +14,14 @@ class Post extends React.Component {
             id : this.props.post._id
         }
         await axios.delete('https://i7e363vzhk.execute-api.ap-southeast-1.amazonaws.com/cads/',data) 
-        .then(response => {
+      
 
-            window. location. reload(true)
-        },
-        error=>{
-            
-        })    
+        window. location. reload(true)
+  
 
     }
+
+  
 
 
   render(){
